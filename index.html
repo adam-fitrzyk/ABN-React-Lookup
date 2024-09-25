@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>ABN Lookup</title>
+</head>
+<body>
+
+    <btn id="btn">Click me!</btn>
+
+    <script>
+
+        const url = "https://abr.business.gov.au/json";
+        let searchParams = new URLSearchParams({callback: "callback", guid: "b6242120-5bce-4b10-9839-d3045a7682da"});
+        
+        function data2Json(data) {
+
+            stringJson = data.slice(9,-1);
+            json = JSON.parse(stringJson);
+            
+            console.log(json["BusinessName"]);
+        }
+
+        function findByABN(ABN) {
+
+            function displayResults(results) {
+                console.log(results);
+            }
+    
+            searchParams.append("abn", ABN);
+            queryString = searchParams.toString();
+            searchParams.delete("abn");
+
+            const dataurl = url + "/AbnDetails.aspx" + "?" + queryString;
+            
+            var data = [];
+
+            fetch(dataurl)
+                .then(response => response.text())
+                .then(text => data2Json(text));
+        
+        }
+    
+        const btn = document.getElementById('btn');
+        console.log(btn);
+    
+        btn.addEventListener('click', () => {
+
+            console.log('btn has been clicked!');
+    
+            findByABN(61620830140);
+    
+        });
+    
+    </script>
+
+</body>
+</html>
