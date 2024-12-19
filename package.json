@@ -1,0 +1,31 @@
+{
+  "name": "abn-lookup-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "react-scripts test --env=jsdom",
+    "start": "react-scripts start",
+    "build": "react-scritps build",
+    "eject": "react-scripts eject"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

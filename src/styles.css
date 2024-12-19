@@ -1,0 +1,58 @@
+
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    padding: 8px;
+    color: whitesmoke;
+    font-family: serif;
+    font-weight: bold;
+    background-color: #023E8A;
+}
+
+legend {
+    color: #0077B6;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+input {
+    margin: 6px;
+    font-family: sans-serif;
+}
+
+.submit {
+    padding: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    margin: 6px;
+    font-family: sans-serif;
+}
+
+.hoverable-default {
+    display: inline-block;
+    background: #e7e7e7;
+    padding: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    margin: 4px;
+    font-size: small;
+}
+
+.hoverable-expanded {
+    display: inline-block;
+    background: #cccccc;
+    padding: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    margin: 4px;
+    font-size: small;
+}
+
+#menu {
+    margin: 20px;
+}
