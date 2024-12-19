@@ -24,11 +24,6 @@ API connectivity:
 - Your GUID for accessing the service is: b6242120-5bce-4b10-9839-d3045a7682da.
 - Please select the most appropriate service(s) to implement a solution.
 
-​## Submit
-
-Please create a private GitHub repository and push your changes to it. Add the following collaborator to the repo: 
-username: tl-recruiting
-
 
 Good luck and have fun!
 
